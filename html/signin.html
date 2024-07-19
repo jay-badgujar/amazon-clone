@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amazon</title>
+    <link rel="icon" type="image/x-icon" href="../social.png">
+    <link rel="stylesheet" href="../style/signin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <center>
+      <a href="/index.html">
+        <img src="../common-photo/amazon_logo_dark.png" alt="" class="logo" />
+      </a>
+    </center>
+    <div class="container border border-1">
+      <div class="header1">
+        <h5 id="h5">Sign in</h5>
+        <b>Email or mobile phone number</b><br />
+        <input
+          type="text"
+          name=""
+          id="e-m"
+          class="form-control me-2"
+          autofocus
+        />
+        <br />
+        <label for="" class="btn btn-warning">Continue</label>
+        <div class="p1">
+          <p>
+            By continuing, you agree to Amazon's
+            <a href="">Conditions of Use</a> and <a href="#">Privacy Notice</a>
+          </p>
+          <div class="d-inline-flex dropend s">
+            <p
+              class="dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="padding-right: 8px"
+            ></p>
+            <div class="need_help" style="cursor: pointer">
+              <a href="#">Need help?</a>
+            </div>
+          </div>
+          <hr class="d-flex" style="width: 103%" />
+        </div>
+        <b id="b1">Buying for work?</b><br />
+        <a href="#" id="shopelink">Shope on Amazon Business</a>
+        <pre></pre>
+      </div>
+    </div>
+    <center>
+      <div class="container d-flex">
+        <hr />
+        <span>New to Amazon?</span>
+        <hr />
+      </div>
+    </center>
+    <center><a id="btn">Create your Amazon account</a></center>
+    <center>
+      <section class="footer">
+        <div class="center">
+          <span><a href="#"> Conditions of Use </a></span>
+          <span>&emsp;&emsp;</span>
+
+          <span><a href="#"> Privacy Notice </a></span>
+          <span>&emsp;&emsp;</span>
+
+          <span><a href="#"> Help </a></span>
+        </div>
+        <p class="copy-content">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </p>
+      </section>
+    </center>
+    <script>
+      var s = document.getElementsByClassName("s")[0];
+      var help = document.getElementsByClassName("need_help")[0];
+      var div1Appended = false; // Track if the divs are appended
+
+      s.addEventListener("click", function () {
+        if (!div1Appended) {
+          // If divs are not appended, append them
+          var div = document.createElement("div");
+          div.innerHTML = "Forgot Your Password?";
+          var div1 = document.createElement("div");
+          div1.innerHTML = "Other Issues with Sign-in";
+          div1.style.marginTop = "1px";
+          div.style.marginTop = "0px";
+          div.style.width = "500px";
+          div1.style.width = "500px";
+          div.style.height = "20px";
+          div1.style.height = "20px";
+          div.style.color = "rgb(15, 90, 253)";
+          div1.style.color = "rgb(15, 90, 253)";
+          s.classList.remove("dropend");
+          div.addEventListener("mouseover", function () {
+            div.style.color = "red";
+            div.style.textDecoration = "underline";
+          });
+          div1.addEventListener("mouseover", function () {
+            div1.style.color = "red";
+            div1.style.textDecoration = "underline";
+          });
+          div.addEventListener("mouseout", function () {
+            div.style.color = "rgb(15, 90, 253)";
+            div.style.textDecoration = "none";
+          });
+          div1.addEventListener("mouseout", function () {
+            div1.style.color = "rgb(15, 90, 253)";
+
+            div1.style.textDecoration = "none";
+          });
+
+          help.append(div);
+          help.append(div1);
+          div1Appended = true; // Set the flag to true indicating divs are appended
+        } else {
+          // If divs are already appended, remove them
+          help.removeChild(help.lastChild); // Remove the last child (Other Issues with Sign-in)
+          help.removeChild(help.lastChild); // Remove the second last child (Forgot Your Password?)
+          s.classList.add("dropend");
+          div1Appended = false; // Reset the flag to false indicating divs are removed
+        }
+      });
+    </script>
+  </body>
+</html>

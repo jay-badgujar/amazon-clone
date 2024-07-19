@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.logo {
+  height: 7%;
+  width: 7%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container.border {
+  height: 70%;
+  width: 25%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.container.border h5 {
+  font-size: 40px;
+}
+
+.container.border.border-5.header1 {
+  left: 50px;
+}
+
+#e-m {
+  border-radius: 2px;
+  width: 90%;
+  margin-left: 20px;
+  height: 32px;
+}
+
+#h5 {
+  margin-left: 19px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  font-size: 30px;
+}
+
+input[type="text"] {
+  margin-top: 5px;
+}
+
+.btn {
+  width: 90%;
+  margin-top: 1px;
+  margin-left: 20px;
+  height: 38px;
+}
+
+b {
+  margin-left: 20px;
+}
+
+.p1 {
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 86%;
+}
+
+p a {
+  text-decoration: none;
+}
+
+.p1 a {
+  text-decoration: none;
+}
+
+.container {
+  border-top: 1px;
+}
+
+#shopelink {
+  text-decoration: none;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+#a1:hover,
+a:hover,
+#shopelink:hover {
+  color: rgb(215, 103, 22);
+  text-decoration: underline;
+}
+
+#b1 {
+  margin-top: 30px;
+}
+
+.container.d-flex {
+  justify-content: center;
+  width: 43%;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-left: 28.5%;
+  margin-bottom: 15px;
+}
+
+.container.d-flex span {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.container hr {
+  width: 20%;
+}
+
+#btn {
+  width: 400px;
+  border: 1px;
+  padding: 7px 105px;
+  height: 38px;
+  border-radius: 10px;
+  /* background-color: transparent; */
+  border: 1px solid grey;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  background-color: white;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 30px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.14),
+    rgba(0, 0, 0, 0.03) 3px,
+    transparent
+  );
+}
+.footer::after {
+  width: 100%;
+  height: 44px;
+  content: "";
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff);
+}
+.center {
+  padding-top: 2%;
+}
+span a {
+  text-decoration: none;
+}
+
+span a:hover {
+  text-decoration: underline;
+  color: rgb(215, 103, 22);
+}
+
+.copy-content {
+  margin-bottom: 50px;
+}

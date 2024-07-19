@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.nav-gift {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+    background: #fafafa;
+    color: #0F1111;
+    font-size: 12px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.nav-gift a:hover {
+    color: #ea8b11;
+    text-decoration: underline;
+}
+
+
+
+
+
+.slider-container {
+    position: relative;
+    max-width: 97%;
+    height: 288px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 50px 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button.prev {
+    left: 10px;
+    font-size: xxx-large;
+}
+
+.button.next {
+    right: 10px;
+    font-size: xxx-large;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.indicator.active {
+    background-color: white;
+}
+
+.gift-cards-gifts {
+    margin-top: 35px;
+}
+
+.gift-cards-gifts a {
+    margin-left: 50px;
+    position: relative;
+}
+
+.gift-cards-gifts a::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 00px;
+    width: 100%;
+    height: 2px;
+}
+
+.gift-cards-gifts a:hover::after {
+    background-color: #008296;
+}
+
+.gift-cards-gifts a:hover {
+    color: #008296;
+}
+
+
+
+
+
+.gift-card-img-sec {
+    display: flex;
+    margin-top: 20px;
+}
+
+.gift-card-img-sec img {
+    width: 50%;
+}
+
+
+
+
+.trending-heading {
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 80px;
+    position: relative;
+}
+
+
+.trending-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 98%;
+    height: 2px;
+}
+
+.trending-heading::after {
+    background-color: rgb(161, 161, 161);
+    height: 0.1px;
+}
+
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.cards-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+    margin: 0 40px;
+}
+
+.card {
+    flex: 0 0 calc(100% / 8 - 10px);
+    max-width: calc(100% / 8 - 10px);
+    margin: 0 5px;
+    /* background-color: #f0f0f0; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.carousel-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+}
+
+.carousel-button:hover {
+    background-color: #c0c0c0;
+}
+
+
+.card-des{
+    color: #0F1111;
+    font-size: 13px;
+}
+
+
+
+
+.redeem-sec{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.redeem-sec img{
+    width: 32%;
+}
+
+
+.learn-more{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.learn-more img{
+    width: 98%;
+}
+
+
+.questions-sec{
+    margin: 0 25px;
+    margin-bottom: 50px;
+}
+
+.questions-sec .que-header{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.questions-sec .que-que{
+    font-size: 16px;
+    font-weight: 700;
+    color: #131921;
+    margin-bottom: 15px;
+}
+
+
+.questions-sec .que-ans{
+    font-size: 14px;
+    font-weight: 400;
+    color: #131921;
+    margin-bottom: 15px;
+}
