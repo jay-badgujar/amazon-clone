@@ -1,6 +1,6 @@
 Amazon Frontend Clone:
 
-Live Project Link : <a href="https://amzn.mastersolutions.in" target="_parent">https://amazon.mastersolutions.in</a>
+Live Project Link : <a href="https://amzn.mastersolutions.in" target="_parent">https://amzn.mastersolutions.in</a>
 
 This project is a frontend clone of the Amazon website. It replicates the look and feel of the Amazon homepage and product listing pages using HTML, CSS, and JavaScript.
 
